@@ -60,6 +60,7 @@ export default {
 
   beforeMount() {
     // Checking MetaMask browser extension is installed
+    // MetaMask extension is a gateway to blockchain from a browser window
     if (typeof window.ethereum !== 'undefined') {
       // Initializing a an object of Web3 which will allow us to work with blockchain. It requires a "provider".
       // window.ethereum is a "provider" which is provided by MetaMask extension. It allows us to "connect to blockchain"
