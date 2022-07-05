@@ -86,6 +86,8 @@ export default {
       // It will be in a HEX format with leading "0x" following with 40 HEX-symbols ( [0-9, A-F, a-f] )
       this.address = accounts[0];
 
+      console.log(await window.ethereum)
+
       // Switching the network to Rinkeby testnet. We don't wanna operate with real funds now :)
       await window.ethereum.request({
         method: 'wallet_switchEthereumChain',
